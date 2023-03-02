@@ -77,6 +77,8 @@
         </div>
       </header>
 
+      <div id="blob"></div>
+
       <section class="services section" id="aboutus">
         <div class="container">
           <div class="section-header">
@@ -91,7 +93,7 @@
             <div class="card-wrap">
               <div class="card" data-card="OLQ">
                 <div class="card-content z-index">
-                  <img src="./assets/Logos/olq.png" class="icon" alt="" />
+                  <img src="./assets/logos/olq.png" class="icon" alt="" />
                   <h3 class="title-sm">OLQ</h3>
                   <p class="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -734,6 +736,20 @@
       </div>
     </footer>
 
+    <script>
+      /* -- Glow effect -- */
+
+      const blob = document.getElementById("blob");
+
+      window.onpointermove = event => { 
+        const { clientX, clientY } = event;
+  
+        blob.animate({
+          left: `${clientX}px`,
+          top: `${clientY}px`
+        }, { duration: 3000, fill: "forwards" });
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
