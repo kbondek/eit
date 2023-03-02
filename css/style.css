@@ -11,6 +11,35 @@
 
 /* Genral Styles */
 
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #d2304b, #ff903d);
+  animation: rotate 20s infinite;
+  filter: blur(50px);
+  opacity: 0.1;
+}
+
 *,
 *::before,
 *::after {
@@ -2046,4 +2075,3 @@ nav.open .links {
 }
 
 /* End Responsive */
-
