@@ -1236,6 +1236,11 @@ nav.open .links {
 /* Responsive */
 
 @media (max-width: 1280px) {
+  .about iframe {
+    width: 100%;
+    height: 240px;
+  }
+  
   .text {
     font-size: 1rem;
   }
@@ -1284,6 +1289,32 @@ nav.open .links {
 
   .column-2 {
     margin-left: 1rem;
+  }
+
+  .overlay.overlay-lg .shape {
+    height: 35px;
+  }
+
+  .overlay.overlay-lg .shape.wave {
+    height: initial;
+    width: 63px;
+  }
+
+  .overlay.overlay-lg .shape.xshape {
+    height: 24px;
+  }
+
+  .overlay.overlay-sm .shape {
+    height: 24px;
+  }
+
+  .overlay.overlay-sm .shape.wave {
+    height: initial;
+    width: 39px;
+  }
+
+  .overlay.overlay-sm .shape.xshape {
+    height: 19px;
   }
 
   header .points1 {
@@ -1562,7 +1593,7 @@ nav.open .links {
     margin: 0.4rem 0;
   }
 
-  .community {
+  .hireme {
     padding: 8rem 0;
   }
 
@@ -1700,6 +1731,43 @@ nav.open .links {
     display: none;
   }
 
+  header .half-circle1 {
+    bottom: 55%;
+    left: 23%;
+  }
+
+  header .circle {
+    left: 8%;
+    bottom: 40%;
+  }
+
+  header .wave1 {
+    bottom: 87%;
+    left: 75%;
+  }
+
+  header .square {
+    top: initial;
+    bottom: 5%;
+    left: 13%;
+  }
+
+  header .triangle {
+    right: 14%;
+    bottom: 63%;
+  }
+
+  header .points2 {
+    width: 280px;
+    bottom: -10px;
+    left: 60%;
+  }
+
+  header .xshape {
+    left: 90%;
+    top: 54%;
+  }
+
   .grid-item {
     width: 50%;
   }
@@ -1719,6 +1787,23 @@ nav.open .links {
     display: none;
   }
 
+  .portfolio .square {
+    top: 10%;
+    left: 14%;
+  }
+
+  .portfolio .wave {
+    top: 33%;
+  }
+
+  .portfolio .circle {
+    right: 20%;
+  }
+
+  .portfolio .xshape {
+    top: 25%;
+  }
+
   .skill-bar {
     width: 100%;
   }
@@ -1732,9 +1817,22 @@ nav.open .links {
     left: 59%;
   }
 
+  .records .wave1,
+  .records .triangle {
+    display: none;
+  }
 
   .records .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .records .wave2 {
+    left: 48%;
+  }
+
+  .records .sqaure2 {
+    bottom: 45%;
+    right: 50px;
   }
 
   .testi-content {
@@ -1857,8 +1955,41 @@ nav.open .links {
     font-size: 0.92rem;
   }
 
+  .overlay.overlay-lg .shape {
+    height: 28px;
+  }
+
+  .overlay.overlay-lg .shape.wave {
+    height: initial;
+    width: 52px;
+  }
+
+  .overlay.overlay-lg .shape.xshape {
+    height: 22px;
+  }
+
   .records .container {
     grid-template-columns: 1fr;
+  }
+
+  .records .half-circle {
+    top: 50%;
+    left: 50px;
+  }
+
+  .records .wave2 {
+    bottom: 50%;
+    right: 20px;
+    left: initial;
+  }
+
+  .records .xshape {
+    right: 70px;
+  }
+
+  .records .square2 {
+    bottom: 90px;
+    right: 40px;
   }
 
   .testi-content {
@@ -1915,3 +2046,4 @@ nav.open .links {
 }
 
 /* End Responsive */
+
